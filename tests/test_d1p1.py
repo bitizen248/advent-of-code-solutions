@@ -16,6 +16,7 @@ from day_1.part_1 import get_number_from_line
 def test_algroithm(line, res):
     assert get_number_from_line(line) == res
 
+
 @pytest.fixture()
 def lines():
     return [
@@ -24,6 +25,7 @@ def lines():
         "a1b2c3d4e5f",
         "treb7uchet",
     ]
+
 
 def test_full_coverage(lines):
     assert get_calibration_number(lines) == 142
