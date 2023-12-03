@@ -12,6 +12,7 @@ def get_game_power(blocks):
         res *= number
     return res
 
+
 def sum_games_powers(lines):
     res = 0
     for line in lines:
@@ -20,7 +21,8 @@ def sum_games_powers(lines):
         res += get_game_power(game_info["blocks"])
     return res
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     lines = open("../input/day_2.txt")
     print(sum_games_powers(lines))
     lines.close()
