@@ -23,6 +23,6 @@ def sum_games_powers(lines):
 
 
 if __name__ == "__main__":
-    lines = open("../input/day_2.txt")
+    lines = open("input/day_2.txt")
     print(sum_games_powers(lines))
     lines.close()

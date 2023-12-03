@@ -39,6 +39,6 @@ def sum_numbers_near_symbols(matrix):
 
 
 if __name__ == "__main__":
-    data = open("../input/day_3.txt")
+    data = open("input/day_3.txt")
     matrix = [[c for c in line.strip()] for line in data]
     print(sum_numbers_near_symbols(matrix))

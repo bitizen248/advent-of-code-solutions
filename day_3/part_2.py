@@ -49,6 +49,6 @@ def multiply_all_gears(matrix):
 
 
 if __name__ == "__main__":
-    data = open("../input/day_3.txt")
+    data = open("input/day_3.txt")
     matrix = [[c for c in line.strip()] for line in data]
     print(multiply_all_gears(matrix))

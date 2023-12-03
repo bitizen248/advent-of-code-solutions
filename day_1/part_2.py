@@ -61,7 +61,7 @@ def get_calibration_number(lines):
 
 
 if __name__ == "__main__":
-    data = open("day_1.txt", "r")
+    data = open("input/day_1_part_2.txt", "r")
     res = get_calibration_number(data)
     print(res)
     data.close()

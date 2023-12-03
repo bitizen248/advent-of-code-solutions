@@ -24,6 +24,6 @@ def find_sum_possible_id(lines, bag_line):
 
 
 if __name__ == "__main__":
-    lines = open("../input/day_2.txt")
+    lines = open("input/day_2.txt")
     print(find_sum_possible_id(lines, "12 red, 13 green, 14 blue"))
     lines.close()
