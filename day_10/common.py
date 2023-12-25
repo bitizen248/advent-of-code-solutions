@@ -11,15 +11,15 @@ def parse_pipes_map(lines):
             if char == "S":
                 s_point = (i, j)
     candidate = {"|", "-", "L", "J", "7", "F"}
-    # if lines[s_point[0] - 1][s_point[1]] in ("-", "L", "J"):
-    #     candidate -= {"|", "7", "F"}
-    # if lines[s_point[0]][s_point[1] + 1] in ("|", "L", "F"):
-    #     candidate -= {"-", "F", "7"}
-    # if lines[s_point[0] + 1][s_point[1]] in ("7", "-", "F"):
-    #     candidate -= {"|", "7", "F"}
-    # if lines[s_point[0]][s_point[1] - 1] in ("|", "J", "7"):
-    #     candidate -= {"-", "", "F"}
-    # print(candidate)
+    if lines[s_point[0] - 1][s_point[1]] in ("-", "L", "J"):
+        candidate -= {"|", "7", "F"}
+    if lines[s_point[0]][s_point[1] + 1] in ("|", "L", "F"):
+        candidate -= {"-", "F", "7"}
+    if lines[s_point[0] + 1][s_point[1]] in ("7", "-", "F"):
+        candidate -= {"|", "7", "F"}
+    if lines[s_point[0]][s_point[1] - 1] in ("|", "J", "7"):
+        candidate -= {"-", "", "F"}
+    print(candidate)
     lines[s_point[0]][s_point[1]] = "J"
 
     for i, line in enumerate(lines):
